@@ -1,0 +1,8 @@
+models:
+  - name: "order"
+    config:
+      materialized: 'table'
+    
+  - name: "raw_orders"
+    config:
+      materialized: 'view'
