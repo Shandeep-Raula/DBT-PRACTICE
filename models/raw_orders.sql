@@ -1,1 +1,4 @@
-SELECT * FROM DBT_PRACTICE_DB.RAW.ORDERS
+{{ config(materialized='view') }}
+
+SELECT *
+FROM {{ source('my_source', 'ORDERS') }}
